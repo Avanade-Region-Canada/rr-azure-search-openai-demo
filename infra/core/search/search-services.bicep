@@ -3,7 +3,7 @@ param location string = resourceGroup().location
 param tags object = {}
 
 param sku object = {
-  name: 'standard'
+  name: 'basic' // 'standard' Use basic, which is cheaper and also supports semantic search
 }
 
 param authOptions object = {}

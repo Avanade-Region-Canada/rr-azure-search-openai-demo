@@ -17,7 +17,7 @@ param searchServiceName string = ''
 param searchServiceResourceGroupName string = ''
 param searchServiceResourceGroupLocation string = location
 
-param searchServiceSkuName string = 'standard'
+param searchServiceSkuName string = 'basic' // 'standard' use basic instead
 param searchIndexName string // Set in main.parameters.json
 
 param storageAccountName string = ''
@@ -42,7 +42,7 @@ param formRecognizerServiceName string = ''
 param formRecognizerResourceGroupName string = ''
 param formRecognizerResourceGroupLocation string = location
 
-param formRecognizerSkuName string = 'S0'
+param formRecognizerSkuName string = 'F0'
 
 param gptDeploymentName string // Set in main.parameters.json
 param gptDeploymentCapacity int = 30
@@ -217,7 +217,7 @@ module storage 'core/storage/storage-account.bicep' = {
     tags: tags
     publicNetworkAccess: 'Enabled'
     sku: {
-      name: 'Standard_ZRS'
+      name: 'Standard_LRS' // 'Standard_ZRS' use LRS instead of ZRS
     }
     deleteRetentionPolicy: {
       enabled: true

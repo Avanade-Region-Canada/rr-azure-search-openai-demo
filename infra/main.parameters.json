@@ -30,7 +30,7 @@
       "value": "${AZURE_FORMRECOGNIZER_RESOURCE_GROUP}"
     },
     "formRecognizerSkuName": {
-      "value": "S0"
+      "value": "F0"
     },
     "searchIndexName": {
       "value": "${AZURE_SEARCH_INDEX=gptkbindex}"
@@ -42,7 +42,7 @@
       "value": "${AZURE_SEARCH_SERVICE_RESOURCE_GROUP}"
     },
     "searchServiceSkuName": {
-      "value": "standard"
+      "value": "basic"
     },
     "storageAccountName": {
       "value": "${AZURE_STORAGE_ACCOUNT}"
